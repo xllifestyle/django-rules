@@ -47,7 +47,7 @@ def object_permission_required(perm, **kwargs):
 
     # Check if perm is given as string in order to not decorate
     # view function itself which makes debugging harder
-    if not isinstance(perm, basestring):
+    if not isinstance(perm, str):
         raise RulesError("First argument, permission, must be a string")
 
     def decorator(view_func):
