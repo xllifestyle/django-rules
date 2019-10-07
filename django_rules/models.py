@@ -4,8 +4,8 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.contrib.contenttypes.models import ContentType
 
-from exceptions import NonexistentFieldName
-from exceptions import RulesError
+from .exceptions import NonexistentFieldName
+from .exceptions import RulesError
 
 
 class RulePermission(models.Model):

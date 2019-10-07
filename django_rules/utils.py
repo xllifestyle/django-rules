@@ -4,7 +4,7 @@ import sys
 
 from django.contrib.contenttypes.models import ContentType
 
-from models import RulePermission
+from .models import RulePermission
     
 def register(app_name, codename, model, field_name='', view_param_pk='', description=''):
     """

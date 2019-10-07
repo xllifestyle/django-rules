@@ -11,11 +11,11 @@ except ImportError:  # python = 2.6
     from django.utils.importlib import import_module  # NOQA
 
 
-from models import RulePermission
-from exceptions import NotBooleanPermission
-from exceptions import NonexistentFieldName
-from exceptions import NonexistentPermission
-from exceptions import RulesError
+from .models import RulePermission
+from .exceptions import NotBooleanPermission
+from .exceptions import NonexistentFieldName
+from .exceptions import NonexistentPermission
+from .exceptions import RulesError
 
 
 class ObjectPermissionBackend(object):
