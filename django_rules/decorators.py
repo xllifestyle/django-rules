@@ -10,10 +10,10 @@ from django.shortcuts import get_object_or_404
 from django.core.urlresolvers import NoReverseMatch, reverse
 from django.core.exceptions import PermissionDenied
 
-from exceptions import RulesError
-from exceptions import NonexistentPermission
-from models import RulePermission
-from backends import ObjectPermissionBackend
+from .exceptions import RulesError
+from .exceptions import NonexistentPermission
+from .models import RulePermission
+from .backends import ObjectPermissionBackend
 
 
 def object_permission_required(perm, **kwargs):
