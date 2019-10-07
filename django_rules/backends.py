@@ -48,7 +48,7 @@ class ObjectPermissionBackend(object):
 
             try:
                 mod = import_module(module)
-            except ImportError, e:
+            except ImportError as e:
                 raise RulesError('Error importing central authorizations module %s: "%s"' % (module, e))
 
             try:
